@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: pompi-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: FLASK_ENV
+        value: production
+      - key: PYTHONPATH
+        value: .
+    healthCheckPath: /health
+    autoDeploy: true
+    disk:
+      name: nipa-disk
+      mountPath: /opt/render/project/src
+      sizeGB: 1
+    scaling:
+      minInstances: 1
+      maxInstances: 3
+    plan: starter
