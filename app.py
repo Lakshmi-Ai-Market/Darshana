@@ -11,6 +11,7 @@ import traceback
 import yfinance as yf
 import numpy as np
 import pandas as pd
+import scipy import stats
 
 app = Flask(__name__)
 CORS(app)
