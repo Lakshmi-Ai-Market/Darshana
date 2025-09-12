@@ -4,7 +4,7 @@ requests==2.31.0
 python-dotenv==1.0.0
 Werkzeug==2.3.7
 gunicorn==21.2.0
-yfinance==0.2.43
+yfinance==0.2.18
 pandas==2.2.2
 numpy==1.26.4
 scipy==1.11.1
