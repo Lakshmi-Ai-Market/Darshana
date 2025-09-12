@@ -159,6 +159,7 @@
                     <h1 class="text-3xl font-bold dancing-script text-pink-600">Darshana</h1>
                 </div>
                 <nav class="hidden md:flex space-x-6">
+                    <a href="{{ url_for('strategy_matrix') }}" class="text-purple-600 hover:text-pink-500 transition-colorsStrategy_Matrix</a>
                     <a href="#fashion" class="text-purple-600 hover:text-pink-500 transition-colors">Fashion</a>
                     <a href="#beauty" class="text-purple-600 hover:text-pink-500 transition-colors">Beauty</a>
                     <a href="#wellness" class="text-purple-600 hover:text-pink-500 transition-colors">Wellness</a>
@@ -175,6 +176,7 @@
             <!-- Mobile Menu -->
             <div id="mobileMenu" class="hidden md:hidden bg-white/95 backdrop-blur-md border-t border-pink-200">
                 <div class="px-4 py-4 space-y-3">
+                    <a href="{{ url_for('strategy_matrix') }}" onclick="toggleMobileMenu()" class="block text-purple-600 hover:text-pink-500 transition-colors py-2">Strategy_Matrix</a>
                     <a href="#fashion" onclick="toggleMobileMenu()" class="block text-purple-600 hover:text-pink-500 transition-colors py-2">Fashion</a>
                     <a href="#beauty" onclick="toggleMobileMenu()" class="block text-purple-600 hover:text-pink-500 transition-colors py-2">Beauty</a>
                     <a href="#wellness" onclick="toggleMobileMenu()" class="block text-purple-600 hover:text-pink-500 transition-colors py-2">Wellness</a>
